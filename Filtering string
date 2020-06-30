@@ -1,0 +1,22 @@
+class ItemSeparator {
+    String[] st=new String[3];
+
+    ItemSeparator(String s)
+    {
+        this.st=s.split("[$]{2}[#]{2}");
+    }
+    String getName()
+    {
+        return st[0];
+    }
+    double getPrice()
+    {
+        return Double.parseDouble(st[1]);
+    }
+    int getQuantity()
+    {
+        return Integer.parseInt(st[2]);
+    }
+
+    
+}
